@@ -1,0 +1,19 @@
+<div>
+    <div id="channel-management">
+        <div>
+            <button class="btn btn-secondary mb-2" onclick="getChannelConnectedArea().updateChannel()">Refresh Messages</button>
+        </div>
+    </div>
+    <div id="channel-message-area">
+        <div id="channel-message-reading-area">
+
+        </div>
+        <form class="form-inline">
+            <div class="form-group mx-sm-3 mb-2">
+                <label for="message" class="sr-only">Message</label>
+                <input type="text" class="form-control" id="message" placeholder="Message">
+            </div>
+            <button type="submit" class="btn btn-primary mb-2" onclick="getChannelConnectedArea().sendMessage()">Send</button>
+        </form>    
+    </div>      
+</div>

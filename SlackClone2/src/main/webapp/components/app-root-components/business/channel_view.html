@@ -1,0 +1,27 @@
+<div>
+    <form class="form-inline">
+        <div class="form-row align-items-center">
+            <div class="col-auto my-1">
+                <select class="form-control" id="inputChannel">
+                    <option>Default select</option>
+                </select>
+            </div>
+            <div class="form-group mx-sm-3 mb-2">
+                <label for="username" class="sr-only">Username</label>
+                <input type="text" class="form-control" id="username" placeholder="Username">
+            </div>
+            <div class="form-group mx-sm-3 mb-2">
+                <label for="password" class="sr-only">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Password">
+            </div>
+            <div class="col-auto my-1">
+                <button type="submit" class="btn btn-secondary" onclick="getChannelsView();">Refresh</button>
+            </div>
+            <div class="col-auto my-1">
+                <button type="submit" class="btn btn-primary" onclick="loginUserToChannel();">Login</button>
+            </div>
+        </div>
+    </form>
+    <connected-channel-area id="connected-channel-area"></connected-channel-area>
+    <img src onerror='getChannelsView();'>
+</div>
